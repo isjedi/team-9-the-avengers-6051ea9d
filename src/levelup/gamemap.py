@@ -3,7 +3,7 @@ class GameMap:
         self.init_number = 100
 
     def Get_Position(self):
-        default_coordinates: tuple = (4,3)
+        default_coordinates: list = [4,3]
         xcoordinate = default_coordinates[0]
         ycoordinate = default_coordinates[1]
         coordinates = (xcoordinate, ycoordinate)
@@ -13,14 +13,10 @@ class GameMap:
 
 
 
-
-
-
-        
 if __name__ == '__main__':
     map=GameMap()
     position=map.Get_Position()
-    print(position)
+    print(position[1])
 
 
 

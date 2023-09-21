@@ -17,14 +17,31 @@ class TestGameGetPosition(TestCase):
         testpos = map.Get_Position()
         assert testpos[1] != 4
 
-    # def test_Get_Position(self):
-    #     map = GameMap()
-    #     yposition = map.Get_Position
-    #     assert yposition != None
+    def test_Move_Direction_East(self):
+        map=GameMap()
+        currentpos = map.Get_Position()
+        newpos=[]
+        newpos.append(currentpos[0]+1)
+        newpos.append(currentpos[1])
+    def test_Move_Direction_West(self):
+        map=GameMap()
+        currentpos = map.Get_Position()
+        newpos=[]
+        newpos.append(currentpos[0]-1)
+        newpos.append(currentpos[1])
+    def test_Move_Direction_North(self):
+        map=GameMap()
+        currentpos = map.Get_Position()
+        newpos=[]
+        newpos.append(currentpos[0])
+        newpos.append(currentpos[1]+1)
+    def test_Move_Direction_South(self):
+        map=GameMap()
+        currentpos = map.Get_Position()
+        newpos=[]
+        newpos.append(currentpos[0])
+        newpos.append(currentpos[1]-1)
 
-    # def test_CalculatePosition(self):
-        
-    #     pass
 
-    # def test_getTotalPosition(self):
-    #     pass
+    def test_getTotalPosition(self):
+        pass
