@@ -6,5 +6,5 @@ class Position:
         self.ycoordinate = coordinates[1]
         self.coordinates = (self.xcoordinate, self.ycoordinate)
 
-    def Position()
+    def Position():
         self.coordinates = coordinates
