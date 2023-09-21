@@ -1,3 +1,5 @@
+from levelup.gamemap import GameMap
+
 class Character:
     name = ""
 
@@ -6,4 +8,8 @@ class Character:
 
     def get_name(self):
         return self.name
-        
+
+    def enter_map(self):
+        map = GameMap()
+        map_position = map.GetPosition()
+        return map_position

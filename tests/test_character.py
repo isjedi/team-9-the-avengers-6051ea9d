@@ -27,4 +27,6 @@ class Character(TestCase):
         name = self.game_character_user_name.get_name()
         assert name == self.name_from_user
     
-    
+    def test_enter_map(self):
+        on_map = self.game_character_user_name.enter_map()   
+        assert on_map == True
