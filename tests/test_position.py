@@ -6,11 +6,11 @@ class TestPosition(TestCase):
     NEW_POSITION = (5,5)
 
     def test_init(self):
-        TEST_XYCOORDINATES = (1,1)
         testobj = Position()
         assert testobj.coordinates[0] == self.TEST_XYCOORDINATES[0]
         assert testobj.coordinates[1] == self.TEST_XYCOORDINATES[1]
 
     def test_set_position(self):
-        testobj = Position()
+        testobj = Position.Position(NEW_POSITION)
+        assert testobj.coordinates[0] == 5
         
