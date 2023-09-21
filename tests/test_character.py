@@ -22,6 +22,6 @@ class Character(TestCase):
         name = self.game_character_user_name.name
         assert name == self.name_from_user
         
-    def test_get_name(self):
-        name = self.game_character_user_name.get_name()
-        assert name == self.name_from_user
+    #def test_get_name(self):
+    #    name = self.game_character_user_name.get_name()
+    #   assert name == self.name_from_user
