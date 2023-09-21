@@ -1,5 +1,6 @@
 class Position:
     coordinates: tuple = (0, 0)
+    # random ints in a bound range of 0-9 use random.randint(0,9)
 
     def _init_(self, coordinates: tuple):
         self.xcoordinate = coordinates[0]
