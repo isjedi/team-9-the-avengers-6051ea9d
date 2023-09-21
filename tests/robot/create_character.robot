@@ -1,15 +1,19 @@
 *** Settings ***
-Documentation     I want to create a new custom character, setting only their name. 
-Test Template     Create character
-Library           CreateCharacterLibrary.py
+Documentation       I want to create a new custom character, setting only their name.
 
-*** Test Cases ***      characterNameInput     characterNameOutput
-Provided name           Erin                   Erin
-Default name            ${EMPTY}               Character
+Library             CreateCharacterLibrary.py
+
+Test Template       Create character
+
+
+*** Test Cases ***    characterNameInput    characterNameOutput
+Provided name    Erin    Erin
+Default name    ${EMPTY}    Character
+
 
 *** Keywords ***
 Create character
     [Arguments]    ${characterNameInput}    ${characterNameOutput}
-    Provide character name      ${characterNameInput}
+    Provide character name    ${characterNameInput}
     Create the character
-    Character name is           ${characterNameOutput}
+    Character name is    ${characterNameOutput}
