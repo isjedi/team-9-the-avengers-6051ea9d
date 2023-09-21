@@ -5,6 +5,6 @@ class TestPosition(TestCase):
     def test_init(self):
         TEST_XYCOORDINATES = (1,1)
         testobj = Position()
-        self.assert = (TEST_XYCOORDINATES[0], testobj.xyCoordinates[0])
-        self.assert = (TEST_XYCOORDINATES[1], testobj.xyCoordinates[1])
+        assert testobj.coordinates[0] == self.TEST_XYCOORDINATES[0]
+        assert testobj.coordinates[1] == self.TEST_XYCOORDINATES[1]
         
