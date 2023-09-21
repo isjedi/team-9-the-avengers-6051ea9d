@@ -1,6 +1,7 @@
 from unittest import TestCase
 from levelup.character import Character
 from levelup.gamemap import GameMap
+from unittest.mock import patch
 
 class Character(TestCase):
     DEFAULT_NAME: str = "Jennifer"
@@ -27,6 +28,6 @@ class Character(TestCase):
         name = self.game_character_user_name.get_name()
         assert name == self.name_from_user
     
-    def test_enter_map(self):
-        on_map = self.game_character_user_name.enter_map()   
-        assert on_map == True
+    def test_enter_map(self):            
+        on_map = self.game_character_user_name.enter_map('fake_map')
+        assert on_map == 'fake_map'
