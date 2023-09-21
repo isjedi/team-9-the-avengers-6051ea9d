@@ -1,5 +1,5 @@
 from unittest import TestCase
-from levelup.position import position
+from levelup.position import Position
 
 class TestPosition(TestCase):
     def test_init(self):
