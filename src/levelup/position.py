@@ -1,5 +1,5 @@
 class Position:
-    coordinates: list = (1, 1)
+    coordinates: list = [1, 1]
     # random ints in a bound range of 0-9 use random.randint(0,9)
 
     def _init_(self, coordinates: list):
