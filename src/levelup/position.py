@@ -1,4 +1,5 @@
 class Position:
+    coordinates: tuple
     xCoordinate: int = 0
     yCoordinate: int = 0
 
