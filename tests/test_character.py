@@ -31,3 +31,12 @@ class Character(TestCase):
     def test_enter_map(self):            
         on_map = self.game_character_user_name.enter_map('fake_map')
         assert on_map == 'fake_map'
+
+    def test_get_position(self):
+        position = self.game_character_user_name.get_position()
+        assert position == None
+
+    def test_move(self):
+        with self.assertRaises(ValueError):
+            move = self.game_character_user_name.move('E')
+        
